@@ -1,0 +1,27 @@
+{
+  "web_servers" : [
+
+    {
+      "name": "FirtsServer",
+      "port": ":9001",
+      "default_hello": "I am First Server"
+    },
+    {
+      "name": "SecondServer",
+      "port": ":9003",
+      "default_hello": "I am First Server"
+    }
+  ],
+  "proxy_servers" : [
+    {
+      "name": "FirstProxyServer",
+      "port": ":8080",
+      "end_point_adress" : "http://127.0.0.1:9001"
+    },
+    {
+      "name": "SecondProxyServer",
+      "port": ":8081",
+      "end_point_adress" : "http://127.0.0.1:9002"
+    }
+  ]
+}
